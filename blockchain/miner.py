@@ -28,7 +28,6 @@ def proof_of_work(last_proof, iterator):
     print("Searching for next proof")
     proof = 100000
     #  TODO: Your code here
-    # start with proof of 10000000
     while not valid_proof(last_hash, proof) and (timer() - start) < 30:
         proof += iterator
 
